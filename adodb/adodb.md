@@ -31,37 +31,47 @@
 ##  2. <a name='前期准备'></a>前期准备
 ###  2.1. <a name='资源视图'></a>资源视图
 要进行可视化对话框编辑需打开如下资源视图
+
 ![33](image/33.jpg)
 打开方式如下图
+
 ![34](image/34.jpg)
 
 ---
 ##  3. <a name='添加菜单栏和对话框'></a>添加菜单栏和对话框
 ###  3.1. <a name='添加菜单栏'></a>添加菜单栏
 在资源视图中双击IDR_MAINFRAME
+
 ![40](image/40.jpg)
 在帮助后空白处右键，并点击新插入
+
 ![35](image/35.jpg)
 双击新插入的空白处，添加标题
 或者在右下角的属性中的描述文字后添加标题
+
 ![36](image/36.jpg)
 ![37](image/37.jpg)
 在刚才添加完的菜单底下进行同样的操作，插入并修改名称
 <font color="red">在属性中最好改一下ID，方便之后操作</font>
+
 ![38](image/38.jpg)
 ![39](image/39.jpg)
 
 ###  3.2. <a name='添加对话框'></a>添加对话框
 在资源视图的Dialog上右键并点击插入Dialog
+
 ![41](image/41.jpg)
 在右下角修改，叫啥自己定
 描述文字里的内容是显示在对话框的左上角
+
 ![42](image/42.jpg)
 ![43](image/43.jpg)
 添加所需要的控件
+
 ![44](image/44.jpg)
 <font color="red">编辑框和按钮最好改一下ID，方便之后操作
 注：列表控件的属性中还需改一下视图才会变成图中的那种效果</font>
+
 ![45](image/45.jpg)
 
 ---
@@ -86,13 +96,17 @@
 ---
 ##  5. <a name='实现数据库连接并在窗口中显示'></a>实现数据库连接并在窗口中显示
 将森哥的这个测试文件放到资源文件中
+
 ![8](image/8.jpg)
 回到刚才创建的Dialog
+
 ![9](image/9.jpg)
 ![10](image/10.jpg)
 操作完后发现xx.cpp中多了个函数
+
 ![13](image/13.jpg)
 然后添加变量
+
 ![11](image/11.jpg)
 ![12](image/12.jpg)
 在framework.h中添加以下代码
@@ -174,17 +188,21 @@
 ![17](image/17.jpg)
 调试成功！
 <font color="red">调试有问题，详见底下问题1和2</font>
+
 ![18](image/18.jpg)
 
 ---
 ##  6. <a name='实现添加操作'></a>实现添加操作
 转到dialog文件
 添加变量，4个编辑框都要(以下只演示一个)
+
 ![19](image/19.jpg)
 ![20](image/20.jpg)
 <font color="red">在类向导中操作也行，类向导中能查看也能添加</font>
+
 ![21](image/21.jpg)
 然后
+
 ![22](image/22.jpg)
 ![23](image/23.jpg)
 转到xx.cpp
@@ -216,12 +234,14 @@
 
 ![26](image/26.jpg)
 调试发现成功
+
 ![24](image/24.jpg)
 
 ---
 ##  7. <a name='实现选取列表中某行并显示在底下'></a>实现选取列表中某行并显示在底下
 转到dialog文件
 与之前添加操作类似，右键列表控件，点击事件处理程序，将消息类型改为NM_CLICK
+
 ![28](image/28.jpg)
 转到xx.cpp
 在OnNMClickList1()中添加以下代码
@@ -239,6 +259,7 @@
 	UpdateData(FALSE);
 ![29](image/29.jpg)
 调试发现成功
+
 ![30](image/30.jpg)
 
 ---
@@ -260,6 +281,7 @@
 
 ![27](image/27.jpg)
 调试发现成功
+
 ![31](image/31.jpg)
 
 ---
@@ -295,6 +317,7 @@
 		MessageBox(_T("请在列表控件中选择要修改的记录"));
 
 调试发现成功
+
 ![32](image/32.jpg)
 
 ---
@@ -308,5 +331,6 @@
 ##  11. <a name='问题2：未定义标识符_connectionptr-adodbconnection;等'></a>问题2：未定义标识符_ConnectionPtr adodbConnection;等
 ###  11.1. <a name='解决方案-1'></a>解决方案
 尝试将framework.h中添加的代码换个位置
+
 ![bug2](image/bug2.jpg)
 
