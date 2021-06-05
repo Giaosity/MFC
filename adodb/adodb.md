@@ -50,6 +50,7 @@
 ![35](image/35.jpg)
 
 双击新插入的空白处，添加标题
+
 或者在右下角的属性中的描述文字后添加标题
 
 ![36](image/36.jpg)
@@ -57,6 +58,7 @@
 ![37](image/37.jpg)
 
 在刚才添加完的菜单底下进行同样的操作，插入并修改名称
+
 <font color="red">在属性中最好改一下ID，方便之后操作</font>
 
 ![38](image/38.jpg)
@@ -69,6 +71,7 @@
 ![41](image/41.jpg)
 
 在右下角修改，叫啥自己定
+
 描述文字里的内容是显示在对话框的左上角
 
 ![42](image/42.jpg)
@@ -80,6 +83,7 @@
 ![44](image/44.jpg)
 
 <font color="red">编辑框和按钮最好改一下ID，方便之后操作
+
 注：列表控件的属性中还需改一下视图才会变成图中的那种效果</font>
 
 ![45](image/45.jpg)
@@ -91,6 +95,7 @@
 ![5](image/5.jpg)
 
 跳转至刚才选择的类列表文件
+
 在OnList中添加代码
 
     AdodbDlg dlg;  
@@ -142,6 +147,7 @@
 ![15](image/15.jpg)
 
 回到xx.cpp中
+
 在OnInitDialog()中添加以下代码
 
     ::SendMessage(userlist.m_hWnd, LVM_SETEXTENDEDLISTVIEWSTYLE, LVS_EX_FULLROWSELECT, LVS_EX_FULLROWSELECT); //高亮
@@ -172,7 +178,9 @@
 ![16](image/16.jpg)
 
 添加函数RefreshData()
+
 <font color="red">方便点的方法：在类视图右键名为xx的类，点击添加函数
+
 笨点的方法：在xx.h添加函数定义，然后在xx.cpp添加函数
 </font>
 
@@ -209,6 +217,7 @@
 ![17](image/17.jpg)
 
 调试成功！
+
 <font color="red">调试有问题，详见底下问题1和2</font>
 
 ![18](image/18.jpg)
@@ -216,6 +225,7 @@
 ---
 ##  6. <a name='实现添加操作'></a>实现添加操作
 转到dialog文件
+
 添加变量，4个编辑框都要(以下只演示一个)
 
 ![19](image/19.jpg)
@@ -231,6 +241,7 @@
 ![23](image/23.jpg)
 
 转到xx.cpp
+
 在OnBnClickedAdd()中添加以下代码
 
     SaveData();
@@ -267,11 +278,13 @@
 ---
 ##  7. <a name='实现选取列表中某行并显示在底下'></a>实现选取列表中某行并显示在底下
 转到dialog文件
+
 与之前添加操作类似，右键列表控件，点击事件处理程序，将消息类型改为NM_CLICK
 
 ![28](image/28.jpg)
 
 转到xx.cpp
+
 在OnNMClickList1()中添加以下代码
 
     int m_nCurrentSel = userlist.GetSelectionMark();
@@ -294,8 +307,11 @@
 ---
 ##  8. <a name='实现删除操作'></a>实现删除操作
 转到dialog文件
+
 与之前添加操作类似，右键删除按钮，点击事件处理程序，然后确定
+
 转到xx.cpp
+
 在OnBnClickedDel()中添加以下代码
 
     CString strSQL;
@@ -317,8 +333,11 @@
 ---
 ##  9. <a name='实现修改操作'></a>实现修改操作
 转到dialog文件
+
 与之前添加操作类似，右键修改按钮，点击事件处理程序，然后确定
+
 转到xx.cpp
+
 在OnBnClickedUpdate()中添加以下代码
 
     int m_nCurrentSel = -1;
