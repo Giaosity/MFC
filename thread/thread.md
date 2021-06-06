@@ -56,13 +56,19 @@
 
 ![11](image/11.jpg)
 
+在文件开头添加头文件
+
+    #include "MainFrm.h"
+
+![20](image/20.jpg)
+
 最后再添加一个线程函数
 
     UINT ThreadProc(LPVOID param)
     {
-        CthreadApp* pApp = (CthreadApp*)AfxGetApp();
-        CMainFrame* pMainFrame = (CMainFrame*)pApp->GetMainWnd();
-        CthreadView* pView = (CthreadView*)pMainFrame->GetActiveView();
+        CMy2020618007高思源App* pApp = (CMy2020618007高思源App*)AfxGetApp();
+	    CMainFrame* pMainFrame = (CMainFrame*)pApp->GetMainWnd();
+	    CMy2020618007高思源View* pView = (CMy2020618007高思源View*)pMainFrame->GetActiveView();
         pView->m_strMessage = "启动了一个线程！";
         while (threadController)
         {	
@@ -86,4 +92,5 @@
 ![15](image/15.jpg)
 
 ---
+
 
