@@ -231,6 +231,10 @@
 
 <font color="red">调试有问题，详见底下问题1和2</font>
 
+[问题1：连接数据库失败](#问题1：连接数据库失败)
+
+[问题2：未定义标识符_ConnectionPtr adodbConnection;等](#问题2：未定义标识符_connectionptr-adodbconnection;等)
+
 ![18](image/18.jpg)
 
 ---
