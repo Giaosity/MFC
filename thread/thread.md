@@ -68,7 +68,7 @@
     {
         CMy2020618007高思源App* pApp = (CMy2020618007高思源App*)AfxGetApp();
 	    CMainFrame* pMainFrame = (CMainFrame*)pApp->GetMainWnd();
-	    CMy2020618007高思源View* pView = (CMy2020618007高思源View*)pMainFrame->GetActiveView();
+	    CMy2020618007高思源View* pView = (CMy2020618007高思源View*)pMainFrame->GetActiveView();pMainFrame->GetActiveView();
         pView->m_strMessage = "启动了一个线程！";
         while (threadController)
         {	
@@ -92,5 +92,6 @@
 ![15](image/15.jpg)
 
 ---
+
 
 
