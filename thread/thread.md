@@ -1,6 +1,16 @@
+<!-- vscode-markdown-toc -->
+* 1. [ 用全局变量实现线程创建与终止](#-用全局变量实现线程创建与终止)
+* 2. [ 实现事件线程创建与终止](#-实现事件线程创建与终止)
+
+<!-- vscode-markdown-toc-config
+	numbering=true
+	autoSave=true
+	/vscode-markdown-toc-config -->
+<!-- /vscode-markdown-toc -->
+
 # Thread
 ---
-##  用全局变量实现线程创建与终止
+##  1. <a name='-用全局变量实现线程创建与终止'></a> 用全局变量实现线程创建与终止
 回到资源视图中Menu，打开**IDR_MAINFRAME**
 
 跟之前一样先创建菜单栏，分别更改ID
@@ -95,7 +105,7 @@
 
 ---
 
-##  实现事件线程创建与终止
+##  2. <a name='-实现事件线程创建与终止'></a> 实现事件线程创建与终止
 还是回到资源视图中Menu，打开**IDR_MAINFRAME**
 
 创建菜单栏，分别更改ID，并添加事件处理程序(就不演示了)
