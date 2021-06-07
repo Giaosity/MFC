@@ -238,11 +238,7 @@
 
 [问题2：未定义标识符_ConnectionPtr adodbConnection;等](#问题2：未定义标识符_connectionptr-adodbconnection;等)
 
-<<<<<<< HEAD
 [问题3：无法打开源文件 "C:/xxx/Debug/msado15.tlh"](#问题3：无法打开源文件-"c:/xxx/debug/msado15.tlh")
-=======
-[问题3：无法打开源文件 "C:/xxx/Debug/msado15.tlh"](#问题3：无法打开源文件 "C:/xxx/Debug/msado15.tlh")
->>>>>>> d0267e3d72f8979581fedeb9f9aabd9f458779db
 
 ![18](image/18.jpg)
 
