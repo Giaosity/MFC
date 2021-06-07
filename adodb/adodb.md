@@ -15,6 +15,8 @@
     * 10.1. [解决方案](#解决方案)
 * 11. [问题2：未定义标识符_ConnectionPtr adodbConnection;等](#问题2：未定义标识符_connectionptr-adodbconnection;等)
     * 11.1. [解决方案](#解决方案-1)
+* 12. [问题3：无法打开源文件 "C:/xxx/Debug/msado15.tlh"](#问题3：无法打开源文件-"c:/xxx/debug/msado15.tlh")
+    * 12.1. [解决方案](#解决方案-2)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -235,6 +237,8 @@
 
 [问题2：未定义标识符_ConnectionPtr adodbConnection;等](#问题2：未定义标识符_connectionptr-adodbconnection;等)
 
+[问题3：无法打开源文件 "C:/xxx/Debug/msado15.tlh"](#问题3：无法打开源文件 "C:/xxx/Debug/msado15.tlh")
+
 ![18](image/18.jpg)
 
 ---
@@ -393,11 +397,12 @@
 
 ---
 ##  11. <a name='问题2：未定义标识符_connectionptr-adodbconnection;等'></a>问题2：未定义标识符_ConnectionPtr adodbConnection;等
-###  11.1. <a name='解决方案'></a>解决方案
+###  11.1. <a name='解决方案-1'></a>解决方案
 尝试将framework.h中添加的代码换个位置
 
 ![bug2](image/bug2.jpg)
 
-## 12. <a name='问题3：无法打开源文件 "C:/xxx/Debug/msado15.tlh"'></a>问题3：无法打开源文件 "C:/xxx/Debug/msado15.tlh"
-### 12.1 <a name='解决方案'></a>解决方案
+---
+##  12. <a name='问题3：无法打开源文件-"c:/xxx/debug/msado15.tlh"'></a>问题3：无法打开源文件 "C:/xxx/Debug/msado15.tlh"
+###  12.1. <a name='解决方案-2'></a>解决方案
 在项目/xxx属性/清单工具/输入与输出中，把嵌入清单从“是”改成“否”。
